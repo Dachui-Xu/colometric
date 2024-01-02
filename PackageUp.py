@@ -1,0 +1,4 @@
+import os
+#os.system(command='pyinstaller -F -w --hidden-import=“sklearn.utils._cython_blas” --hidden-import=“sklearn.neighbors.typedefs” --hidden-import=“sklearn.neighbors.quad_tree” --hidden-import=“sklearn.tree” --hidden-import=“sklearn.tree._utils” ./src/colorDetect.py -i ./ico/2.ico')
+#os.system(command="pyinstaller --clean -Fw ./src/colorDetect.py -i ./ico/2.ico")
+os.system(command='pyinstaller -F --hidden-import="sklearn.utils._cython_blas" --hidden-import="sklearn.utils._vector_sentinel" --hidden-import="sklearn.utils._heap" --hidden-import="sklearn.utils._sorting" --hidden-import="sklearn.utils._typedefs" --hidden-import="sklearn.neighbors.typedefs" --hidden-import="sklearn.neighbors.quad_tree" --hidden-import="sklearn.tree._utils" ./src/colorDetect.py -i ./ico/2.ico')
